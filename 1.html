@@ -42,15 +42,15 @@
     // https://blog.csdn.net/jxg1473819657/article/details/84324347 vue写的单点登陆
 
     Vue.component('todo-item', {
-  template: '<li>这是个待办项</li>'
-})
+       template: '<li>这是个待办项</li>'
+    });
 
     var app = new Vue({
     el: '#app',
     data: {
         message: 'Hello Vue!'
     }
-    })
+    });
 
     var test=new Vue({
         el:'#test',
@@ -63,8 +63,8 @@
                 { text: '整个牛项目' }
              ]
         }
-    })
-    test.todos.push({ text: '新项目' })
+    });
+    test.todos.push({ text: '新项目' });
 
     var app5 = new Vue({
     el: '#app-5',
